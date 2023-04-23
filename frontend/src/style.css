@@ -1,3 +1,99 @@
-h1, p {
-  font-family: Lato;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --base-color: #14213d;
+  --accent-color: #fca311;
+  --background-color: #e5e5e5;
 }
+/* base color - 14213d */
+/* accent - fca311 */
+/* background - ffffff / e5e5e5 */
+input::placeholder{
+  color: black;
+  opacity: 0.8;
+}
+
+.custom__grid{
+  grid-template-columns: 0.5fr 2fr 1.2fr 1fr  1fr;
+  grid-template-rows: 80px 200px;
+}
+
+
+#mob-menu{
+  z-index: 10;
+}
+#menu-btn{
+  position: relative;
+  z-index: 200;
+}
+
+.menu__button{
+  color:var(--accent-color);
+  padding: 0 6px;
+  border: 2px dashed var(--background-color);
+  margin: 0 4px;
+  border-radius: 7px;
+}
+
+body{
+  background-color: var(--background-color);
+  color: black;
+}
+
+input,select{
+  margin: 2px;
+  padding: 6px;
+  border: 2px solid var(--base-color);
+  border-radius: 7px;
+  display: block;
+  background-color: var(--ba
+  );
+  color: var(--base-color);
+}
+
+
+html{
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100vw;
+  background: #14213d;
+  height: 60px;
+  color: #fca311;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+}
+
+.btn {
+  background-color: var(--base-color);
+  padding: 9px;
+  color: var(--accent-color);
+  transition: 0.5s ease-in;
+  margin: auto 12px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+button:hover{
+  transform: scale(1.13);
+  background-color: #00171F;
+  border-radius: 6px;
+  
+}
+hr{
+  
+  border-color: #10002b !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+

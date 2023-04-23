@@ -1,0 +1,53 @@
+[
+    {
+    "name": "John Doe",
+    "age": 35,
+    "email": "john.doe@example.com",
+    "contact": "+1 (123) 456-7890",
+    "emergencyContact": "+1 (234) 567-8901",
+    "address": "123 Main St, Anytown, USA",
+    "pan": "ABCDE1234F",
+    "aadhaar": "1234 5678 9012",
+    "salary": 100000,
+    "dept": "Sales",
+    "manager": "Jane Smith",
+    "image": "https://www.fillmurray.com/640/360",
+    "onBoarded": "2022-01-01",
+    "onNoticePeriod": false,
+    "status": true
+  },
+  {
+    "name": "Jane Smith",
+    "age": 42,
+    "email": "jane.smith@example.com",
+    "contact": "567-8901",
+    "emergencyContact": "678-9012",
+    "address": "456 Oak St, Anytown, USA",
+    "pan": "FGHIJ5678K",
+    "aadhaar": "2345 6789 0123",
+    "salary": 120000,
+    "dept": "Marketing",
+    "manager": "Bob Johnson",
+    "image": "https://www.fillmurray.com/640/360",
+    "onBoarded": "2021-06-01",
+    "onNoticePeriod": true,
+    "status": true
+  },
+  {
+    "name": "Bob Johnson",
+    "age": 50,
+    "email": "bob.johnson@example.com",
+    "contact": "678-9012",
+    "emergencyContact": "89-0123",
+    "address": "789 Pine St, Anytown, USA",
+    "pan": "LMNOP4567Q",
+    "aadhaar": "3456 7890 1234",
+    "salary": 150000,
+    "dept": "Engineering",
+    "manager": null,
+    "image": "https://www.fillmurray.com/640/360",
+    "onBoarded": "2020-03-01",
+    "onNoticePeriod": false,
+    "status": true
+  }
+]
