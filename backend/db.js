@@ -1,21 +1,19 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 import dotenv from 'dotenv';
 
+const USER = process.env.DB_URI_USER;
+const PSWD = process.env.DB_URI_PSWD;
 
-const envVal = dotenv.config()['parsed']
+const URI = "mongodb+srv://dbAdmin:mzcwXecs8xlsFZ5S@cluster0.fxp1ehk.mongodb.net/?retryWrites=true&w=majority";
 
-const URI = envVal['URI']
-
-
-
-async function connectToDb(){
-    try{
-        await mongoose.connect(URI);
-        console.log("DB is Connected!")
+const connectToDb = ()=>{
+    try {
+        mongoose.connect(URI).then(()=>{console.log(`DB connected!`)}).catch((err)=>{console.log(`Error Occured: ${err}`)})
+    } catch (error) {
+        console.log(error);
+        console.log("Error connecting with DB");
     }
-    catch (err){
-        console.error(err);
-    };
 }
+
 
 export default connectToDb;
